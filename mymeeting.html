@@ -9,6 +9,17 @@
             const api = new JitsiMeetExternalAPI("8x8.vc", {
               roomName: "vpaas-magic-cookie-8c6e41beb3dc48398db0deb5450d7e9a/SampleAppOrangeSwingsComposeAlong",
               parentNode: document.querySelector('#jaas-container')
+                const domain = '8x8.vc';
+const options = {
+    ...
+    devices: {
+        audioInput: '<deviceLabel>',
+        audioOutput: '<deviceLabel>',
+        videoInput: '<deviceLabel>'
+    },
+    ...
+};
+const api = new JitsiMeetExternalAPI(domain, options);
             });
           }
         </script>
